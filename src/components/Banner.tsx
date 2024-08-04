@@ -10,6 +10,10 @@ const Banner = () => {
                 <button className="bg-accent hover:bg-accentDark px-8 py-4 text-white rounded-md w-fit mt-4">Shop Now</button>
             </div>
         </div>
+
+        <div className="grid place-items-center">
+          <img src="/banner_image.jpg" alt="" />
+        </div>
     </section>
   )
 }

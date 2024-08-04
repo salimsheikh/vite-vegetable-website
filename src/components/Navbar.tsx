@@ -25,6 +25,7 @@ export const Navbar = () => {
       </div>
       <div className="border-t border-b border-gray-300 mt-8 lg:block hidden">
         <div className="container flex items-center justify-between">
+          <div className="flex items-center gap-12">
           <button className="bg-accent text-white flex items-center gap-4 py-4 px-4 rounded-md">
             <CiMenuFries size={24} />
             BROWSE CATEGORY
@@ -36,6 +37,7 @@ export const Navbar = () => {
             <li>VENDORS</li>
             <li>ABOUT US</li>            
           </ul>
+          </div>
           <div className="flex items-center gap-4 text-gray-500">
             <BiSupport size={24} />
             <p>(+91) 9876543210</p>
