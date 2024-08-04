@@ -120,3 +120,9 @@ export default {
   plugins: [],
 }
 ````
+
+[https://react-icons.github.io/react-icons/](https://react-icons.github.io/react-icons/)
+
+````js
+npm install react-icons --save
+````
