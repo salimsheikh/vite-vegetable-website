@@ -25,8 +25,8 @@ const Services = () => {
     return (
         <section className="container mt-[100px]">
             <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                {servicesData.map((service) => (
-                    <ServiceCard key={service.title} icon={service.icon} title={service.title} desc={service.desc} />                    
+                {servicesData.map((service, index) => (
+                    <ServiceCard key={index} icon={service.icon} title={service.title} desc={service.desc} />                    
                 ))}
             </div>
         </section>
