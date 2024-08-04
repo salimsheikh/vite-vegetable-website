@@ -1,4 +1,5 @@
-import { CiSearch } from "react-icons/ci"
+import { BiSupport } from "react-icons/bi"
+import { CiMenuFries, CiSearch } from "react-icons/ci"
 import { FaRegHeart } from "react-icons/fa6"
 import { MdOutlineShoppingCart } from "react-icons/md"
 
@@ -20,6 +21,30 @@ export const Navbar = () => {
             <div className=" bg-accent size-5 text-white text-sm rounded-full grid place-items-center absolute left-[12px] top-[-13px]">0</div>
           </div>
           <FaRegHeart />
+        </div>
+      </div>
+      <div className="border-t border-b border-gray-300 mt-8 lg:block hidden">
+        <div className="container flex items-center justify-between">
+          <button className="bg-accent text-white flex items-center gap-4 py-4 px-4 rounded-md">
+            <CiMenuFries size={24} />
+            BROWSE CATEGORY
+          </button>
+          <ul className="flex items-center gap-6">
+            <li>HOME</li>
+            <li>SHOP</li>
+            <li>VEGS</li>
+            <li>VENDORS</li>
+            <li>ABOUT US</li>            
+          </ul>
+          <div className="flex items-center gap-4 text-gray-500">
+            <BiSupport size={24} />
+            <p>(+91) 9876543210</p>
+          </div>
+
+
+
+
+
         </div>
       </div>
     </nav>
