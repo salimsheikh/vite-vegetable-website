@@ -1,6 +1,7 @@
 import { BiSupport } from "react-icons/bi";
 import { LiaShippingFastSolid } from "react-icons/lia";
 import { RiRefund2Line, RiSecurePaymentLine } from "react-icons/ri";
+import ServiceCard from "./ServiceCard";
 const Services = () => {
     const servicesData = [
         {
@@ -25,11 +26,7 @@ const Services = () => {
         <section className="container mt-[100px]">
             <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                 {servicesData.map((service) => (
-                    <div className="flex flex-col items-center justify-center">
-                        <div className="text-accent">{service.icon}</div>
-                        <h2 className="text-xl font-medium mt-4 mb-2">{service.title}</h2>
-                        <p className="text-gray-500">{service.desc}</p>
-                    </div>
+                    <ServiceCard key={service.title} icon={service.icon} title={service.title} desc={service.desc} />                    
                 ))}
             </div>
         </section>
