@@ -58,6 +58,7 @@ npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 ````
 
+tailwind.config.js
 ```js
 export default {
   content: [
@@ -71,6 +72,7 @@ export default {
 }
 
 ````
+
 src/index.css
 ```js
 @tailwind base;
@@ -96,5 +98,25 @@ export default App
 npm run dev
 ````
 
-
-
+tailwind.config.js
+```js
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      container: {
+        center: true,
+        padding: "15px"
+      },
+      colors: {
+        accent: "#6BADOD",
+        accentDark: "#629FOC"
+      }
+    },
+  },
+  plugins: [],
+}
+````
