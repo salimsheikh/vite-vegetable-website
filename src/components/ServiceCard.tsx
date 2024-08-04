@@ -6,7 +6,7 @@ interface PropsType {
 
 const ServiceCard = ({ icon, title, desc }: PropsType) => {
     return (
-        <div className="flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-center mb-4 lg:mb-0">
             <div className="text-accent">{icon}</div>
             <h2 className="text-xl font-medium mt-4 mb-2">{title}</h2>
             <p className="text-gray-500">{desc}</p>

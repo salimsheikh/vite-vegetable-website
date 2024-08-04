@@ -11,7 +11,7 @@ const ProductCard = ({id, img, name, price} : PropsType) => {
   return (
     <div>
         <div className="border border-gray-300">
-            <img src={img} alt={name} />
+            <img src={img} alt={name} className="w-full" />
         </div>
         <div className="border border-gray-300 border-t-0">
             <h2 className="text-2xl text-center pt-4">{name}</h2>
