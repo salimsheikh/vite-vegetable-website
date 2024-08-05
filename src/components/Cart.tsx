@@ -16,9 +16,7 @@ const Cart = ({ cart, setCart, setCartOpen }: PropsType) => {
         cart?.forEach((item) => {
             total += item.quantity * item.price;
         });
-
         return total;
-
     }
 
     return (
